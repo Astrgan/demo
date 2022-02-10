@@ -1335,11 +1335,18 @@ demo = {
         low: 0,
         high: 1000,
         showPoint: true,
-        height: '300px'
+        height: '300px',
+        plugins: [
+          Chartist.plugins.tooltip({
+            anchorToPoint: true
+          })
+        ]
       };
 
 
       var colouredRoundedLineChart = new Chartist.Line('#colouredRoundedLineChart', dataColouredRoundedLineChart, optionsColouredRoundedLineChart);
+
+
 
       md.startAnimationForLineChart(colouredRoundedLineChart);
 

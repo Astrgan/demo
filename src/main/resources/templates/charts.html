@@ -26,6 +26,8 @@ The above copyright notice and this permission notice shall be included in all c
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="/assets/css/material-dashboard.css?v=2.2.2" rel="stylesheet" />
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css'>
+  <link rel='stylesheet' href='https://rawgit.com/Globegitter/chartist-plugin-tooltip/master/dist/chartist-plugin-tooltip.css'>
   <!-- CSS Just for demo purpose, don't include it in your project -->
 <!--  <link href="/assets/demo/demo.css" rel="stylesheet" />-->
 </head>
@@ -52,6 +54,7 @@ The above copyright notice and this permission notice shall be included in all c
 
             <div class="row">
               <div class="col-md-6">
+
                 <div th:insert="~{fragments\card :: fragmenCard()}"/>
 
               </div>
@@ -200,13 +203,15 @@ The above copyright notice and this permission notice shall be included in all c
   <!-- Library for adding dinamically elements -->
   <script src="/assets/js/plugins/arrive.min.js"></script>
   <!-- Chartist JS -->
-  <script src="/assets/js/plugins/chartist.min.js"></script>
+<!--  <script src="/assets/js/plugins/chartist.min.js"></script>-->
+  <script src='https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js'></script>
   <!--  Notifications Plugin    -->
   <script src="/assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="/assets/js/material-dashboard.js?v=2.2.2" type="text/javascript"></script>
-
+  <script src='https://rawgit.com/Globegitter/chartist-plugin-tooltip/master/dist/chartist-plugin-tooltip.min.js'>
   <script src="/assets/js/script.js"></script>
+
   <script>
     $(document).ready(function() {
       // Javascript method's body can be found in assets/assets-for-demo/js/demo.js
