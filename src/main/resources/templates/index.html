@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Javascript</title>
+</head>
+<body>
+    <ol id="demo"></ol>
+
+    <script th:inline="javascript">
+        const array = [[${data}]];;
+        const list = document.getElementById('demo');
+        for (const item of array) {
+            let entry = document.createElement('li');
+            entry.appendChild(document.createTextNode(item));
+            list.appendChild(entry);
+        }
+
+    </script>
+</body>
+</html>
