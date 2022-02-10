@@ -1337,9 +1337,7 @@ demo = {
         showPoint: true,
         height: '300px',
         plugins: [
-          Chartist.plugins.tooltip({
-            anchorToPoint: true
-          })
+          Chartist.plugins.tooltip()
         ]
       };
 
