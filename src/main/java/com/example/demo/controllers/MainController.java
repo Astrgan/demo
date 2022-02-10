@@ -15,7 +15,7 @@ public class MainController {
         String[] array = new String[] {"Winter", "Spring", "Summer", "Autumn"};
         model.addAttribute("data", array);
 
-        return "index";
+        return "charts";
     }
 
 
